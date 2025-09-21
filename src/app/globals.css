@@ -1,10 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  --background: #F5F5DC; /* Creamish */
-  --foreground: #2E8B57; /* Green */
-  --primary-green: #3CB371;
-  --primary-cream: #F5F5DC;
+  /* New Logo-based Theme */
+  --primary-blue: #3B82F6;
+  --primary-green: #10B981;
+  --primary-cream: #FEFBF3;
+  --dark-green: #047857;
+  --dark-blue: #1E40AF;
+  
+  /* CORRECTED: Darker text colors for high contrast */
+  --text-primary: #064E3B; /* Very dark green for headings */
+  --text-secondary: #1F2937; /* Dark gray for body text */
+  --text-muted: #4B5563;    /* Muted gray for less important text */
+  --text-light: #f3f4f6;
+
+  /* NEW: Very dark greenish-blue for extreme contrast */
+  --text-darker-greenish-blue: #003333; /* A very dark cyan/teal shade */
+
+  /* Default theme mapping */
+  --background: var(--primary-cream);
+  --foreground: var(--text-secondary); /* Use the new dark gray as default */
 }
 
 @theme inline {
@@ -16,8 +31,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #2E8B57; /* Dark Green */
-    --foreground: #F5F5DC; /* Creamish */
+    --background: #111827; 
+    --foreground: #f3f4f6;
   }
 }
 
