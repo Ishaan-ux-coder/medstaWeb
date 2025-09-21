@@ -1,8 +1,8 @@
 export default function Benefits() {
   return (
-    <section className="py-20 bg-gradient-to-br from-primary-cream to-green-100">
+    <section className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12 text-primary-green tracking-tight">Benefits</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-green-700 tracking-tight">Benefits</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-green-100 flex flex-col items-start">
             <h3 className="text-2xl font-bold mb-4 text-green-700">For Patients</h3>

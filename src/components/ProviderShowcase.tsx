@@ -15,9 +15,9 @@ const categories = ['All', 'Hospital', 'Lab', 'Pharmacy', 'Physiotherapist'];
 export default function ProviderShowcase() {
   const [selected, setSelected] = useState('All');
   return (
-    <section className="py-16 bg-gradient-to-br from-primary-cream to-green-100">
+    <section className="py-16 bg-white">
       <div className="max-w-5xl mx-auto px-4">
-  <h2 className="text-4xl font-bold text-center mb-10 text-primary-green tracking-tight">Provider Showcase</h2>
+  <h2 className="text-4xl font-bold text-center mb-10 text-green-700 tracking-tight">Provider Showcase</h2>
         <div className="flex flex-wrap gap-2 justify-center mb-8">
           {categories.map(cat => (
             <button
