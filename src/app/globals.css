@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  /* New Logo-based Theme */
+  --primary-blue: #3B82F6;
+  --primary-green: #1E40AF;
+  /* Changed to Blue */
+  --primary-cream: #FFFFFF;
+  --dark-green: #1E3A8A;
+  /* Changed to Blue-900 */
+  --dark-blue: #1E40AF;
+
+  /* CORRECTED: Darker text colors for high contrast */
+  --text-primary: #000000;
+  /* Black for headings */
+  --text-secondary: #000000;
+  /* Black for body text */
+  --text-muted: #1f2937;
+  /* Dark gray for less important text */
+  --text-light: #f3f4f6;
+
+  /* NEW: Very dark greenish-blue for extreme contrast */
+  --text-darker-greenish-blue: #000000;
+  /* A very dark cyan/teal shade */
+
+  /* Default theme mapping */
+  --background: var(--primary-cream);
+  --foreground: #000000;
+  /* Use black as default */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #111827;
+    --foreground: #f3f4f6;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-plus-jakarta), sans-serif;
+  overflow-x: hidden;
+  /* Prevent horizontal scroll */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-plus-jakarta), sans-serif;
+}
